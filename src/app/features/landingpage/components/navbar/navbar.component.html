@@ -1,0 +1,52 @@
+<div class="to-navbar">
+   <div class="top-nav px-sm-2 px-md-4 py-2">
+    <div class="d-flex justify-content-between">
+      <div class="nav-contact">
+        <ul class="d-sm-flex">
+          <li *ngFor="let c of topContacts" class="ml-3">
+            <i [class]="c.icon"></i>
+            <span class="ml-2">{{c.label}}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-social">
+        <ul class="d-flex">
+          <li *ngFor="let c of topSocials" class="mr-3">
+            <i [class]="c.icon"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </div>
+   <div class="nav-brand px-5 py-4">
+     <div class="d-flex justify-content-between">
+        <div>
+          <img src="assets/images/logo.png" alt="">
+        </div>
+        <div>
+          <div class="search-bar">
+            <select name="" id="">
+              <option class="" *ngFor="let c of categories">{{c.label}}</option>
+            </select>
+            <input type="search" placeholder="Rechercher ....">
+            <button>RECHERCHER</button>
+          </div>
+        </div>
+        <div>
+
+        </div>
+     </div>
+   </div>
+   <div class="nav-menu px-3 py-3">
+     <div class="d-flex">
+      <ul class="d-flex">
+        <li *ngFor="let m of menus" class="ml-3">
+          <a href="">{{m.label}}</a>
+        </li>
+       </ul>
+
+
+     </div>
+
+   </div>
+</div>

@@ -1,0 +1,53 @@
+.domaine-card{
+  height: 286px;
+  position: relative;
+  transition: all 0.5s;
+
+  &:hover{
+    transition: all 0.5s;
+    .label{
+      transition: all 0.5s;
+      visibility: visible;
+      scale: 1.03;
+      background-color: #d100237e;
+      box-shadow: rgba(82, 82, 82, 0.35) 0px 5px 15px;
+    }
+
+    img{
+      transition: all 0.5s;
+
+      scale: 1.03;
+    }
+  }
+
+
+  .label{
+  transition: all 0.5s;
+    visibility: hidden;
+    width: 332px;
+    height: 286px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    padding-top: 80px;
+    span{
+      font-size: 36px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-weight: 700;
+
+
+    }
+
+    a{
+      color: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      padding: 6px 20px;
+    }
+
+
+  }
+}

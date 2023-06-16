@@ -1,0 +1,113 @@
+.top-navbar{
+  width: 100wv;
+}
+.top-nav{
+  background-color: #1E1F29;
+  font-size: 13px;
+}
+.nav-contact{
+  i{
+    color: #D10024;
+  }
+  span{
+    color: #FFFFFF;
+    transition: color .5s;
+  }
+
+  span:hover{
+    color: #D10024;
+    cursor: inherit;
+  }
+}
+
+.nav-social{
+  i{
+    cursor: pointer;
+    transition: color 0.5s;
+    color: #FFFFFF;
+  }
+  i:hover{
+   color: #D10024;
+  }
+}
+
+.nav-brand{
+  background-color: #15161D;
+  border-bottom: 2px solid #D10024;
+}
+
+.nav-menu{
+  border-bottom: 2px solid #b7b5b594;
+  li{
+    display: table-cell;
+    position: relative;
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 13px;
+    a {
+    color: #2B2D42;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+
+      display: inline-block;
+      padding: 4px 20px;
+      position: relative;
+    }
+    a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #D10024;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+  li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #D10024;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+}
+
+.search-bar{
+  select{
+    height: 45px;
+    outline: none;
+    border: none;
+    border-right: 1.5px solid #bababa78;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    -webkit-appearance: menulist-button;
+  -moz-appearance:none;
+  }
+
+  input{
+    height: 45px;
+    width: 320px;
+    outline: none;
+    border: none;
+  }
+
+  button{
+    height: 45px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: #D10024;
+    color: #FFFFFF;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

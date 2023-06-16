@@ -1,0 +1,13 @@
+<div class="container p-5">
+  <div class="row">
+    <div *ngFor="let d of domaines" class="col-md-4 text-center domaine-card" >
+      <img [src]="d.img" [alt]="d.label" class="img-fluid">
+      <div class="label">
+        <span>{{d.label}}</span>
+        <br>
+        <br>
+        <a href="">VOIR PLUS</a>
+      </div>
+    </div>
+  </div>
+</div>
