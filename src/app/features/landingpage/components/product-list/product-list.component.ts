@@ -52,31 +52,38 @@ export class ProductListComponent implements OnInit{
       products: [
         {
           id: 7,
-          name: "JCHUB Interactive Flat Panel Display-XP Series"
+          name: "JCHUB Interactive Flat Panel Display-XP Series",
+          img: "https://www.jcvision-edu.com/upload/201909/20190906043508551zzl.png"
         },
         {
           id: 8,
-          name: "JCHUB-IR Technology"
+          name: "JCHUB-IR Technology",
+          img: "https://www.jcvision-edu.com/upload/201811/201811301051413qy649.png"
         },
         {
           id: 9,
-          name: "JCHUB JCVision 86inch JCHub Interactive Flat Panel Display"
+          name: "JCHUB JCVision 86inch JCHub Interactive Flat Panel Display",
+          img: "https://www.jcvision-edu.com/upload/202303/20230317202826cduzog.jpg"
         },
         {
           id: 10,
-          name: "JCHUB IR Tech Pro"
+          name: "JCHUB IR Tech Pro",
+          img: "https://www.jcvision-edu.com/upload/201811/20181130114135m1ig8d.jpg"
         },
         {
           id: 11,
-          name: "JCHUB Capacitive Touch Screen"
+          name: "JCHUB Capacitive Touch Screen",
+          img: "https://www.jcvision-edu.com/upload/201811/20181130114855iya6qw.jpg"
         },
         {
           id: 12,
-          name: "JCHUB JCVision Floor Stand"
+          name: "JCHUB JCVision Floor Stand",
+          img: "https://www.jcvision-edu.com/upload/202205/20220526172425rdmdzt.png"
         },
         {
           id: 13,
-          name: "JCHUB CAST"
+          name: "JCHUB CAST",
+          img: "https://www.jcvision-edu.com/upload/202107/20210724175257f0acib.jpg"
         }
 
       ]
@@ -86,73 +93,44 @@ export class ProductListComponent implements OnInit{
       products: [
          {
           id: 14,
-          name: "JCBOARD IR Technology With Speaker"
+          name: "JCBOARD IR Technology With Speaker",
+          img: "https://www.jcvision-edu.com/upload/201601/20160128152937m29p5q.jpg"
          },
          {
           id: 15,
-          name: "JCBOARD IR Technology With Intelligent"
+          name: "JCBOARD IR Technology With Intelligent",
+          img: "https://www.jcvision-edu.com/upload/201601/20160128152517ooz765.jpg"
          },
          {
           id: 16,
-          name: "JCBOARD IR Technology K Series"
+          name: "JCBOARD IR Technology K Series",
+          img: "https://www.jcvision-edu.com/upload/201601/2016012815065404l0i4.jpg"
          },
          {
           id: 17,
-          name: "JCBOARD IR Technology-P Series"
+          name: "JCBOARD IR Technology-P Series",
+          img: "https://www.jcvision-edu.com/upload/201601/20160128150017l1yzss.jpg"
          },
          {
           id: 18,
-          name: "JCBOARD IR Technology-A Series"
+          name: "JCBOARD IR Technology-A Series",
+          img: "https://www.jcvision-edu.com/upload/201601/20160128143053brk9el.jpg"
          },
          {
           id: 19,
-          name: "JCBOARD SU Series"
+          name: "JCBOARD SU Series",
+          img: "https://www.jcvision-edu.com/upload/202110/20211029210026dcc4me.jpg"
          },
          {
           id: 20,
-          name: "JCBOARD EM Technology-F Series"
+          name: "JCBOARD EM Technology-F Series",
+          img: "https://www.jcvision-edu.com/upload/201601/201601232109053ofr44.jpg"
          },
          {
           id: 21,
-          name: "JCBOARD Portable IWB-P9"
+          name: "JCBOARD Portable IWB-P9",
+          img: "https://www.jcvision-edu.com/upload/201909/20190906053702og1173.jpg"
          }
-      ]
-    },
-    {
-      category: "jcboard",
-      products: [
-        {
-          id: 22,
-          name: "JCBOARD IR Technology With Speaker"
-        },
-        {
-          id: 23,
-          name: "JCBOARD IR Technology With Intelligent"
-        },
-        {
-          id: 24,
-          name: "JCBOARD IR Technology-K Series"
-        },
-        {
-          id: 25,
-          name: "JCBOARD IR Technology-P Series"
-        },
-        {
-          id: 26,
-          name: "JCBOARD IR Technology-A Series"
-        },
-        {
-          id: 27,
-          name: "JCBOARD SU Series"
-        },
-        {
-          id: 28,
-          name: "JCBOARD EM Technology-F Series"
-        },
-        {
-          id: 29,
-          name: "JCBOARD Portable IWB-P9"
-        }
       ]
     },
     {
@@ -160,15 +138,18 @@ export class ProductListComponent implements OnInit{
       products: [
          {
           id: 30,
-          name: "JCVISION Digital Podium-JC-S600-F"
+          name: "JCVISION Digital Podium-JC-S600-F",
+          img: "https://www.jcvision-edu.com/upload/201909/20190906072458arvql4.jpg"
          },
          {
           id: 31,
-          name: "JCVISION All-In-One Mutimedia System-A200"
+          name: "JCVISION All-In-One Mutimedia System-A200",
+          img: "https://www.jcvision-edu.com/upload/201601/201601221401217h8wkk.jpg"
          },
          {
           id: 32,
-          name: "JCVISON Green Board & Whiteboard Solution-GW500"
+          name: "JCVISON Green Board & Whiteboard Solution-GW500",
+          img: "https://www.jcvision-edu.com/upload/201602/20160201223046mdknlo.jpg"
          }
       ]
     },
@@ -177,15 +158,18 @@ export class ProductListComponent implements OnInit{
       products: [
         {
           id: 33,
-          name: "3D Scanner for 3D Printer"
+          name: "3D Scanner for 3D Printer",
+          img: "https://www.jcvision-edu.com/upload/201609/20160901175156fzvbof.jpg"
         },
         {
           id: 34,
-          name: "Laser Engraving Machine-LSE301"
+          name: "Laser Engraving Machine-LSE301",
+          img: "https://www.jcvision-edu.com/upload/201609/20160901182037dh6iwr.jpg"
         },
         {
           id: 35,
-          name: "3D Laser Cutting Machine L5/L7"
+          name: "3D Laser Cutting Machine L5/L7",
+          img: "https://www.jcvision-edu.com/upload/201609/20160901184310rnipg5.jpg"
         }
       ]
     },
@@ -195,47 +179,58 @@ export class ProductListComponent implements OnInit{
       products: [
         {
           id: 36,
-          name: "JCVISON OPS PC"
+          name: "JCVISON OPS PC",
+          img: "https://www.jcvision-edu.com/upload/202205/20220526171217bbh2rm.jpg"
         },
         {
           id: 37,
-          name: "JCVISION Coolpodium Digital Podium-JC-DP700"
+          name: "JCVISION Coolpodium Digital Podium-JC-DP700",
+          img: "https://www.jcvision-edu.com/upload/201601/201601182303200o498r.jpg"
         },
         {
           id: 38,
-          name: "JCVISION Charging Cabinet-M50"
+          name: "JCVISION Charging Cabinet-M50",
+          img: "https://www.jcvision-edu.com/upload/201601/20160130122046380dgy.jpg"
         },
         {
           id: 39,
-          name: "JCVISON Interactive LED Projector-P300"
+          name: "JCVISON Interactive LED Projector-P300",
+          img: "https://www.jcvision-edu.com/upload/201601/20160130121912mcb3w1.jpg"
         },
         {
           id: 40,
-          name: "JCVISON latest launch Educational Robot-JCROBO"
+          name: "JCVISON latest launch Educational Robot-JCROBO",
+          img: "https://www.jcvision-edu.com/upload/201703/20170324182241rfilsx.jpg"
         },
         {
           id: 41,
-          name: "JCVIEWER Documant Scanner -L Series"
+          name: "JCVIEWER Documant Scanner -L Series",
+          img: "https://www.jcvision-edu.com/upload/201601/20160118200744nxygux.jpg"
         },
         {
           id: 42,
-          name: "JCVIEWER Document Scanner-V Series"
+          name: "JCVIEWER Document Scanner-V Series",
+          img: "https://www.jcvision-edu.com/upload/201601/201601311042029y87yk.jpg"
         },
         {
           id: 43,
-          name: "JCVIEWER Visualizer-JC-VL Series "
+          name: "JCVIEWER Visualizer-JC-VL Series ",
+          img: "https://www.jcvision-edu.com/upload/201909/20190906052030u9tvec.jpg"
         },
         {
           id: 44,
-          name: "JCVIEWER Document Scanner-A Series"
+          name: "JCVIEWER Document Scanner-A Series",
+          img: "https://www.jcvision-edu.com/upload/201601/2016011820042204bxgz.jpg"
         },
         {
           id: 45,
-          name: "Kid's Reading pen-TP1"
+          name: "Kid's Reading pen-TP1",
+          img: "https://www.jcvision-edu.com/upload/201601/20160117160006skyb1s.jpg"
         },
         {
           id: 46,
-          name: "Kid's Tablet-K72"
+          name: "Kid's Tablet-K72",
+          img: "https://www.jcvision-edu.com/upload/201601/20160117134403zk07kp.jpg"
         }
       ]
     }
