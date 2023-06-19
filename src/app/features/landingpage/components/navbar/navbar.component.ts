@@ -24,13 +24,13 @@ export class NavbarComponent {
 
   public topSocials = [
     {
-      icon: "fa fa-facebook"
+      icon: "fab fa-facebook"
     },
     {
-      icon: "fa fa-linkedin"
+      icon: "fab fa-linkedin"
     },
     {
-      icon: "fa fa-twitter"
+      icon: "fab fa-twitter"
     }
   ]
 

@@ -11,6 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { SolutionsComponent } from './components/solutions/solutions.component';
+import { NewsComponent } from './components/news/news.component';
 
 
 
@@ -24,7 +27,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HeaderComponent,
     FooterComponent,
     ProductCardComponent,
-    ProductListComponent
+    ProductListComponent,
+    AboutUsComponent,
+    SolutionsComponent,
+    NewsComponent
   ],
   imports: [
     CommonModule,

@@ -12,7 +12,7 @@
       <div class="nav-social">
         <ul class="d-flex">
           <li *ngFor="let c of topSocials" class="mr-3">
-            <i [class]="c.icon"></i>
+            <a href="" class="text-white"><i [class]="c.icon"></i></a>
           </li>
         </ul>
       </div>
@@ -20,20 +20,28 @@
    </div>
    <div class="nav-brand px-5 py-4">
      <div class="d-flex justify-content-between">
-        <div>
-          <img src="assets/images/logo.png" alt="">
-        </div>
+         <span class="bg-white" style="border-radius: 10px;"><img src="assets/images/logo.png" alt=""></span>
+
+
         <div>
           <div class="search-bar">
             <select name="" id="">
               <option class="" *ngFor="let c of categories">{{c.label}}</option>
             </select>
-            <input type="search" placeholder="Rechercher ....">
+            <input type="search" class="px-3" placeholder="Rechercher ....">
             <button>RECHERCHER</button>
           </div>
         </div>
-        <div>
-
+        <div class="i18n">
+             <div class="flex">
+               <button>
+                FR
+               </button>
+               <span class="text-white mx-2">|</span>
+               <button>
+                EN
+               </button>
+             </div>
         </div>
      </div>
    </div>
