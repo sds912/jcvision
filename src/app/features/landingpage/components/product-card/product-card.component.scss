@@ -1,6 +1,10 @@
 .product-card{
-  height: 230px;
+  cursor: pointer;
+  height: 240px;
   img{
-    max-height: 180px !important;
+    height: 180px !important;
+  }
+  &:hover{
+    background-color: #e8e6e6;
   }
 }

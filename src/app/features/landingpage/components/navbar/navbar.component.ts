@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ProductsService } from '../../services/products.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+
+  @Input() public products: any[] = [];
+  public selectedProduct:  any;
+  public selectedCategory: any;
+  productsToSelect: any ;
 
   public topContacts = [
     {
@@ -76,7 +83,24 @@ export class NavbarComponent {
     }
   ];
 
-  constructor(){}
+  constructor(private router: Router){
+
+  }
+
+
+  ngOnInit(): void {
+  }
+
+
+  public search(){
+      this.router.navigate(["products",this.selectedProduct.id ])
+  }
+
+  onCategoryChange(value: any){
+  this.productsToSelect = this.products.find(p => p.category.includes(value));
+  console.log(this.productsToSelect)
+
+  }
 
 
 

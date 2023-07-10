@@ -14,6 +14,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { NewsComponent } from './components/news/news.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { NewsCardComponent } from './components/news-card/news-card.component';
 
 
 
@@ -30,7 +32,9 @@ import { NewsComponent } from './components/news/news.component';
     ProductListComponent,
     AboutUsComponent,
     SolutionsComponent,
-    NewsComponent
+    NewsComponent,
+    ProductDetailsComponent,
+    NewsCardComponent
   ],
   imports: [
     CommonModule,

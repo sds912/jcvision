@@ -1,21 +1,22 @@
 <div class="container mt-3">
 <!--Liste header-->
 <div class="list-header">
-  <div class="d-flex justify-content-between">
+  <div class="d-md-flex d-block justify-content-between">
      <div class="title">
       <h3 class="product-title">Nos produits</h3>
      </div>
      <div class="categories">
       <ul class="cat-list">
-        <li class="cat-name mr-3" *ngFor="let p of products">
+        <li class="cat-name mr-md-3 mr-2 active" *ngFor="let p of products">
           <a (click)="loadProducts(p.category)">{{p.category}}</a>
+          <div [ngClass]="{'selector': p.category === selectedCat}"></div>
         </li>
       </ul>
      </div>
   </div>
 </div>
 <!--Liste de produits-->
-<div class="product-carousel">
+<div class="product-carousel" *ngIf="products.length > 0">
   <owl-carousel-o [options]="customOptions" >
     <ng-container *ngFor="let p of currentList">
       <ng-template carouselSlide [id]="p.name">

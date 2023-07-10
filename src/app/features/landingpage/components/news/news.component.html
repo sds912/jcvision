@@ -1,1 +1,21 @@
-<p>news works!</p>
+<div class="container">
+<div class="row">
+  <div class="col-12 col-sm-7">
+    <app-news-card [article]="new" *ngFor="let new of news"></app-news-card>
+  </div>
+  <div class="col-12 col-sm-5">
+    <div>
+      <owl-carousel-o [options]="customOptions" >
+        <ng-container *ngFor="let n of imagesNews">
+          <ng-template carouselSlide [id]="n.id">
+           <div>
+            <img [src]="n.img" [alt]="n.label" class="img-fluid">
+           </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</div>
+</div>
+

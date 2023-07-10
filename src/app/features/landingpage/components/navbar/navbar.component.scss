@@ -93,12 +93,19 @@
   -moz-appearance:none;
   }
 
-  input{
-    height: 45px;
+  .searchbar{
     width: 320px;
-    outline: none;
-    border: none;
+    height: 45px;
+
+    input{
+      outline: none;
+      border: none;
+      width: 320px;
+      height: 45px;
+    }
+
   }
+
 
   button{
     height: 45px;
@@ -120,4 +127,47 @@
     }
   }
 }
+
+.autocomplet{
+  width: 100%;
+  position: absolute;
+  padding: 4px;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+}
+
+.main-search-bar{
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .logo-bg{
+    border-radius: 10px !important;
+    height: 41px !important;
+    width: 160px !important;
+    display: block !important;
+    margin: auto !important;
+  }
+
+  .searchbar{
+
+    width: 100% !important;
+
+    input{
+      width: 100% !important;
+    }
+
+  }
+
+  .search-bar{
+    margin: auto !important;
+    select{
+      padding-left: 3px;
+      padding-right: 3px;
+    }}
+
+}
+
+
 

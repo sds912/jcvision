@@ -18,21 +18,32 @@
       </div>
     </div>
    </div>
-   <div class="nav-brand px-5 py-4">
-     <div class="d-flex justify-content-between">
-         <span class="bg-white" style="border-radius: 10px;"><img src="assets/images/logo.png" alt=""></span>
-
-
-        <div>
-          <div class="search-bar">
-            <select name="" id="">
-              <option class="" *ngFor="let c of categories">{{c.label}}</option>
+   <div class="nav-brand px-md-5 px-2 py-4">
+     <div class="d-sm-flex d-block justify-content-between text-center">
+         <span class="bg-white logo-bg"  ><img src="assets/images/logo.png" alt=""></span>
+        <div class="mt-3 main-search-bar">
+          <div class="search-bar d-flex">
+            <select #category (change)="onCategoryChange(category.value)">
+              <option disabled selected>Catégorie</option>
+              <option class="" *ngFor="let p of products"  >{{p.category}}</option>
             </select>
-            <input type="search" class="px-3" placeholder="Rechercher ....">
-            <button>RECHERCHER</button>
+            <div class="searchbar">
+              <input type="search" class="px-3" placeholder="Rechercher ....">
+            </div>
+            <button (click)="search()">
+              <span class="d-none d-md-flex">RECHERCHER</span>
+              <i class="fa fa-search d-md-none d-flex" aria-hidden="true"></i>
+            </button>
           </div>
+        <!-- <div class="autocomplet" *ngIf="productsToSelect !== undefined">
+            <ul>
+             <li *ngFor="let p of productsToSelect!.products" (click)="selectedProduct = p">
+              {{p.name}}
+             </li>
+            </ul>
+          </div> -->
         </div>
-        <div class="i18n">
+        <div class="i18n d-none d-md-block">
              <div class="flex">
                <button>
                 FR
@@ -46,12 +57,27 @@
      </div>
    </div>
    <div class="nav-menu px-3 py-3">
-     <div class="d-flex">
-      <ul class="d-flex">
+     <div class="d-flex justify-content-between">
+      <button class="d-flex d-md-none">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul class="d-none d-md-flex">
         <li *ngFor="let m of menus" class="ml-3">
           <a href="">{{m.label}}</a>
         </li>
        </ul>
+
+       <div class="i18n  d-md-none">
+        <div class="flex">
+          <button class="text-dark">
+           FR
+          </button>
+          <span class="text-dark mx-2">|</span>
+          <button class="text-dark">
+           EN
+          </button>
+        </div>
+   </div>
 
 
      </div>
